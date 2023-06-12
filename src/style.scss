@@ -1,0 +1,26 @@
+$main-background-color: #fdfbfb;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $main-background-color;
+}
+
+.navbar {
+  height: 2em;
+  font-size: 2em;
+  background-color: #aeabab;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 1em;
+}
+
+.nav-link {
+  color: black;
+  text-decoration: none;
+}
