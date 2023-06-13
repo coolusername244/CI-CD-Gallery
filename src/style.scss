@@ -59,3 +59,8 @@ body {
 .search-form__button:active {
   background-color: $button-clicked;
 }
+
+.img-item img {
+  width: 100%;
+  padding: 1em;
+}
