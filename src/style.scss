@@ -64,3 +64,16 @@ body {
   width: 100%;
   padding: 1em;
 }
+
+@media (min-width: 768px) {
+  #image-display {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  #image-display {
+    grid-template-columns: repeat(4, 1fr);
+  };
+}
