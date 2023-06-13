@@ -41,6 +41,11 @@ body {
   border-bottom: solid $contrast-color 1px;
   letter-spacing: 0.1em;
   text-indent: 0.5em;
+  background-color: $background-color;
+}
+
+.search-form__input:focus-visible {
+  outline: none;
 }
 
 .search-form__button {
