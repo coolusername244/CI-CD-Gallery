@@ -4,7 +4,6 @@ export const localStorageHistory = (): void => {
     const localStorageHistory = localStorage.getItem('searchHistory')
     if (localStorageHistory) {
         const values: string[] = JSON.parse(localStorageHistory)
-        console.log(values);
         values.forEach(item => {
             searchHistory.push(item)
         })
