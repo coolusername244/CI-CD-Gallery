@@ -1,4 +1,4 @@
-const searchHistory: string[] = []
+export const searchHistory: string[] = []
 
 export const localStorageHistory = (): void => {
     const localStorageHistory = localStorage.getItem('searchHistory')
@@ -12,7 +12,9 @@ export const localStorageHistory = (): void => {
 }
 
 export const setLocalStorage = (query: string): void => {
-    searchHistory.push(query)
-    localStorage.setItem('searchHistory', JSON.stringify(searchHistory))
+    if (query !== '') {
+        searchHistory.push(query)
+        localStorage.setItem('searchHistory', JSON.stringify(searchHistory))
+    }
 }
 

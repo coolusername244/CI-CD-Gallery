@@ -42,6 +42,7 @@ body {
   letter-spacing: 0.1em;
   text-indent: 0.5em;
   background-color: $background-color;
+  position: relative;
 }
 
 .search-form__input:focus-visible {
@@ -58,6 +59,18 @@ body {
 
 .search-form__button:active {
   background-color: $button-clicked;
+}
+
+.dropdown {
+  // background-color: #fff;
+  width: 40%;
+  text-align: center;
+}
+
+.dropdown div {
+  padding: 0.5em;
+  border-bottom: solid $contrast-color 1px;
+
 }
 
 .img-item img {
