@@ -1,4 +1,6 @@
-export const renderPhotos = (arr) => {
+import { IArr } from "../interfaces/IArr"
+
+export const renderPhotos = (arr: IArr[]) => {
     const imageDisplay = document.querySelector('#image-display') as HTMLElement
     imageDisplay.innerHTML = ''
     arr.forEach(item => {
